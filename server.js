@@ -7,11 +7,12 @@ import jwt from "jsonwebtoken";
 import cors from "cors";
 import admin from "firebase-admin";
 import { getAuth } from "firebase-admin/auth";
+import serviceAccountKey from "./thedailytech-b0eaa-firebase-adminsdk-bdyrp-1bef3cae92.json" assert {type: "json"};
+
 
 //schema imports
 import User from "./Schema/User.js";
 
-const serviceAccountKey = require("./thedailytech-b0eaa-firebase-adminsdk-bdyrp-1bef3cae92.json");
 
 
 const server = express();
